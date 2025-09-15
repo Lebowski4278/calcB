@@ -26,6 +26,7 @@ void resetColor() {
 double calc(double a, double b, char op) {
     switch (op) {
     case '+': return a + b;
+    case '-': return a - b;
     default:
         throw runtime_error("Неизвестная операция!");
     }
