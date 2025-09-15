@@ -28,6 +28,11 @@ double calc(double a, double b, char op) {
     case '+': return a + b;
     case '-': return a - b;
     case '*': return a * b;
+    case '/':
+    if (b == 0) {
+        throw runtime_error("Деление на ноль!");
+    }
+    return a / b;
     default:
         throw runtime_error("Неизвестная операция!");
     }
